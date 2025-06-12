@@ -317,7 +317,7 @@
 									</div>
 									<div class="w-100 wow fadeInUp text-center exportmapbottom">
 										<img src="../OurImages/OtherImage/final map.png" alt="India ka swaad"
-											class="lazyload" />
+											class="lazyload responsivemap" />
 									</div>
 								</div>
 							</section>
@@ -560,7 +560,7 @@
 									position: relative;
 									overflow: hidden;
 								}
-						
+
 								.baramati-service-section::before {
 									content: '';
 									position: absolute;
@@ -572,15 +572,29 @@
 									animation: baramatiFloat 25s infinite linear;
 									pointer-events: none;
 								}
-						
+
 								@keyframes baramatiFloat {
-									0% { transform: translateX(-10px) translateY(-10px); }
-									25% { transform: translateX(10px) translateY(-15px); }
-									50% { transform: translateX(-5px) translateY(-20px); }
-									75% { transform: translateX(15px) translateY(-10px); }
-									100% { transform: translateX(-10px) translateY(-10px); }
+									0% {
+										transform: translateX(-10px) translateY(-10px);
+									}
+
+									25% {
+										transform: translateX(10px) translateY(-15px);
+									}
+
+									50% {
+										transform: translateX(-5px) translateY(-20px);
+									}
+
+									75% {
+										transform: translateX(15px) translateY(-10px);
+									}
+
+									100% {
+										transform: translateX(-10px) translateY(-10px);
+									}
 								}
-						
+
 								.baramati-container {
 									max-width: 1200px;
 									margin: 0 auto;
@@ -588,13 +602,13 @@
 									position: relative;
 									z-index: 2;
 								}
-						
+
 								.baramati-header {
 									text-align: center;
 									margin-bottom: 60px;
 									color: white;
 								}
-						
+
 								.baramati-badge {
 									display: inline-block;
 									background: rgba(255, 255, 255, 0.2);
@@ -608,7 +622,7 @@
 									text-transform: uppercase;
 									letter-spacing: 1px;
 								}
-						
+
 								.baramati-title {
 									font-size: 3.5rem;
 									font-weight: 800;
@@ -618,7 +632,7 @@
 									background-clip: text;
 									line-height: 1.2;
 								}
-						
+
 								.baramati-description {
 									font-size: 1.2rem;
 									opacity: 0.95;
@@ -627,7 +641,7 @@
 									line-height: 1.7;
 									color: black;
 								}
-						
+
 								/* Updated grid layout for 2 cards per row */
 								.baramati-regions-grid {
 									display: grid;
@@ -635,7 +649,7 @@
 									gap: 25px;
 									margin-top: 50px;
 								}
-						
+
 								.baramati-region-card {
 									background: rgba(255, 255, 255, 0.95);
 									backdrop-filter: blur(20px);
@@ -648,7 +662,7 @@
 									overflow: hidden;
 									height: fit-content;
 								}
-						
+
 								.baramati-region-card::before {
 									content: '';
 									position: absolute;
@@ -659,18 +673,18 @@
 									background: linear-gradient(90deg, #ff6b6b, #ffa726, #66bb6a, #42a5f5);
 									border-radius: 20px 20px 0 0;
 								}
-						
+
 								.baramati-region-card:hover {
 									transform: translateY(-8px);
 									box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 								}
-						
+
 								.baramati-region-header {
 									display: flex;
 									align-items: center;
 									margin-bottom: 20px;
 								}
-						
+
 								.baramati-region-icon {
 									width: 50px;
 									height: 50px;
@@ -683,27 +697,27 @@
 									font-size: 24px;
 									/* box-shadow: 0 8px 16px rgba(255, 107, 107, 0.3); */
 								}
-						
+
 								.baramati-region-title {
 									font-size: 1.8rem;
 									font-weight: 700;
 									color: #002c76;
 									margin-bottom: 5px;
 								}
-						
+
 								.baramati-region-subtitle {
 									font-size: 1.1rem;
 									color: black;
 									font-weight: 500;
 								}
-						
+
 								/* Updated cities grid for 4 columns */
 								.baramati-cities-grid {
 									display: grid;
 									grid-template-columns: repeat(4, 1fr);
 									gap: 6px;
 								}
-						
+
 								.baramati-city-tag {
 									background: linear-gradient(135deg, #f7fafc, #edf2f7);
 									border: 1px solid #e2e8f0;
@@ -722,7 +736,7 @@
 									align-items: center;
 									justify-content: center;
 								}
-						
+
 								.baramati-city-tag::before {
 									content: '';
 									position: absolute;
@@ -733,18 +747,18 @@
 									background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
 									transition: left 0.5s;
 								}
-						
+
 								.baramati-city-tag:hover::before {
 									left: 100%;
 								}
-						
+
 								.baramati-city-tag:hover {
 									background: linear-gradient(135deg, #ff6b6b, #ffa726);
 									color: white;
 									transform: scale(1.05);
 									box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
 								}
-						
+
 								.baramati-stats-section {
 									background: rgba(255, 255, 255, 0.15);
 									backdrop-filter: blur(20px);
@@ -755,25 +769,25 @@
 									border: 1px solid rgba(255, 255, 255, 0.2);
 									box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 								}
-						
+
 								.baramati-stats-title {
 									font-size: 2rem;
 									font-weight: 700;
 									color: #e1000b;
 									margin-bottom: 30px;
 								}
-						
+
 								.baramati-stats-grid {
 									display: grid;
 									grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 									gap: 40px;
 								}
-						
+
 								.baramati-stat-item {
 									color: white;
 									position: relative;
 								}
-						
+
 								.baramati-stat-number {
 									font-size: 3.2rem;
 									font-weight: 800;
@@ -782,7 +796,7 @@
 									text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 									color: #002c76;
 								}
-						
+
 								.baramati-stat-label {
 									font-size: 1.1rem;
 									opacity: 0.95;
@@ -791,7 +805,7 @@
 									font-weight: 600;
 									color: black;
 								}
-						
+
 								.baramati-products-highlight {
 									background: rgba(255, 255, 255, 0.1);
 									backdrop-filter: blur(15px);
@@ -801,21 +815,21 @@
 									text-align: center;
 									border: 1px solid rgba(255, 255, 255, 0.2);
 								}
-						
+
 								.baramati-products-title {
 									font-size: 2rem;
 									font-weight: 700;
 									color: #e1000b;
 									margin-bottom: 20px;
 								}
-						
+
 								.baramati-products-list {
 									display: flex;
 									flex-wrap: wrap;
 									justify-content: center;
 									gap: 15px;
 								}
-						
+
 								.baramati-product-badge {
 									background: rgba(255, 255, 255, 0.9);
 									color: #2d3748;
@@ -825,95 +839,95 @@
 									font-weight: 600;
 									transition: all 0.3s ease;
 								}
-						
+
 								.baramati-product-badge:hover {
 									background: white;
 									transform: translateY(-2px);
 									box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 								}
-						
+
 								/* Responsive Design */
 								@media (max-width: 1024px) {
 									.baramati-cities-grid {
 										grid-template-columns: repeat(4, 1fr);
 										gap: 5px;
 									}
-									
+
 									.baramati-city-tag {
 										font-size: 0.65rem;
 										padding: 5px 6px;
 									}
 								}
-						
+
 								@media (max-width: 768px) {
 									.baramati-service-section {
 										padding: 10px 0 50px 0;
 									}
-						
+
 									.baramati-title {
 										font-size: 2.5rem;
 									}
-						
+
 									.baramati-description {
 										font-size: 1.1rem;
 									}
-						
+
 									.baramati-regions-grid {
 										grid-template-columns: 1fr;
 										gap: 20px;
 									}
-						
+
 									.baramati-region-card {
 										padding: 20px;
 									}
-						
+
 									.baramati-cities-grid {
 										grid-template-columns: repeat(4, 1fr);
 										gap: 4px;
 									}
-						
+
 									.baramati-city-tag {
 										padding: 4px 6px;
 										font-size: 0.6rem;
 									}
-						
+
 									.baramati-stats-section {
 										padding: 35px 25px;
 									}
-						
+
 									.baramati-stat-number {
 										font-size: 2.5rem;
 									}
-						
+
 									.baramati-products-list {
 										flex-direction: column;
 										align-items: center;
 									}
 								}
-						
+
 								@media (max-width: 480px) {
 									.baramati-container {
 										padding: 0 15px;
 									}
-						
+
 									.baramati-title {
 										font-size: 2rem;
 									}
-						
+
 									.baramati-region-card {
 										padding: 15px;
 									}
-						
+
 									.baramati-cities-grid {
 										grid-template-columns: repeat(3, 1fr);
 										gap: 3px;
 									}
-						
+
 									.baramati-city-tag {
 										font-size: 0.55rem;
 										padding: 3px 4px;
 									}
-						
+
 									.baramati-stats-grid {
 										grid-template-columns: 1fr;
 										gap: 25px;
@@ -926,9 +940,17 @@
 									}
 								}
 
+
+								@media screen and (min-width: 1000px) {
+									.responsivemap {
+										height: 90vh !important;
+									}
+								}
+
+
 							</style>
-					
-						
+
+
 							<section class="baramati-service-section">
 								<div class="baramati-container">
 									<div class="baramati-header">
@@ -941,11 +963,12 @@
 											creating sweet memories and healthier moments for millions.
 										</p>
 									</div>
-						
+
 									<div class="baramati-regions-grid">
 										<div class="baramati-region-card">
 											<div class="baramati-region-header">
-												<div class="baramati-region-icon"><img src="../OurImages/OtherImage/cityiconold.png"></div>
+												<div class="baramati-region-icon"><img
+														src="../OurImages/OtherImage/cityiconold.png"></div>
 												<div>
 													<h3 class="baramati-region-title">North India</h3>
 													<p class="baramati-region-subtitle">Heritage meets sweetness</p>
@@ -965,10 +988,11 @@
 												<div class="baramati-city-tag">Jaipur</div>
 											</div>
 										</div>
-						
+
 										<div class="baramati-region-card">
 											<div class="baramati-region-header">
-												<div class="baramati-region-icon"><img src="../OurImages/OtherImage/cityiconold.png" alt=""></div>
+												<div class="baramati-region-icon"><img
+														src="../OurImages/OtherImage/cityiconold.png" alt=""></div>
 												<div>
 													<h3 class="baramati-region-title">East India</h3>
 													<p class="baramati-region-subtitle">Cultural richness & taste</p>
@@ -986,13 +1010,15 @@
 												<div>&nbsp;</div>
 											</div>
 										</div>
-						
+
 										<div class="baramati-region-card">
 											<div class="baramati-region-header">
-												<div class="baramati-region-icon"><img src="../OurImages/OtherImage/cityiconold.png"></div>
+												<div class="baramati-region-icon"><img
+														src="../OurImages/OtherImage/cityiconold.png"></div>
 												<div>
 													<h3 class="baramati-region-title">South India</h3>
-													<p class="baramati-region-subtitle">Tropical flavors & traditions</p>
+													<p class="baramati-region-subtitle">Tropical flavors & traditions
+													</p>
 												</div>
 											</div>
 											<div class="baramati-cities-grid">
@@ -1016,10 +1042,11 @@
 												<div class="baramati-city-tag">Kottayam</div>
 											</div>
 										</div>
-						
+
 										<div class="baramati-region-card">
 											<div class="baramati-region-header">
-												<div class="baramati-region-icon"><img src="../OurImages/OtherImage/cityiconold.png"></div>
+												<div class="baramati-region-icon"><img
+														src="../OurImages/OtherImage/cityiconold.png"></div>
 												<div>
 													<h3 class="baramati-region-title">West India</h3>
 													<p class="baramati-region-subtitle">Our home region & beyond</p>
@@ -1052,15 +1079,16 @@
 												<div class="baramati-city-tag">Satara</div>
 												<!-- <div class="baramati-city-tag">Sangli</div> -->
 												<!-- <div class="baramati-city-tag">Ichalkaranji</div> -->
-												
+
 												<!-- <div class="baramati-city-tag">Malegoan</div> -->
 												<!-- <div class="baramati-city-tag">Jalgaon</div> -->
 											</div>
 										</div>
 									</div>
-						
+
 									<div class="baramati-products-highlight">
-										<h3 class="baramati-products-title">Our Beloved Products Available Nationwide</h3>
+										<h3 class="baramati-products-title">Our Beloved Products Available Nationwide
+										</h3>
 										<div class="baramati-products-list">
 											<div class="baramati-product-badge">🍯 Imali Chulbuli</div>
 											<div class="baramati-product-badge">🍓 Jelfiee</div>
@@ -1069,7 +1097,7 @@
 											<div class="baramati-product-badge">🥜 Nutribels Chikkis</div>
 										</div>
 									</div>
-						
+
 									<div class="baramati-stats-section">
 										<h3 class="baramati-stats-title">Our Sweet Journey in Numbers</h3>
 										<div class="baramati-stats-grid">
@@ -1112,11 +1140,12 @@
 									<div class="carousel-inner" style="margin-top: 10px !important;">
 										<div class="carousel-item active itembanner">
 											<img src="../OurImages/Banner/presencebanner.png"
-												alt="Jitne aasman mein sitaare hain, utni is mein sev hai" style="width: 2000px;" class="jelfieebannerproduct" />
+												alt="Jitne aasman mein sitaare hain, utni is mein sev hai"
+												style="width: 2000px;" class="jelfieebannerproduct" />
 											<!-- <img src="./OurImages/Banner/itembanner3.png"
 												class="d-block d-sm-none"
 												alt="Jitne aasman mein sitaare hain, utni is mein sev hai" />  -->
-				
+
 											<!-- <div class="carousel-caption">
 												<div class="container">
 													<div class="sliderfadeInLeft animated lgtitle70">
@@ -1126,14 +1155,14 @@
 													</div>
 												</div>
 											</div> -->
-				
+
 										</div>
 									</div>
-				
+
 								</div>
-				
-				
-				
+
+
+
 								<!-- <div class="pro-top-leaf position-absolute wow fadeInRight">
 									<img data-src="OurImages/OtherImage/mix2.png"
 										class=" mixfruit lazyload position-relative popup" alt="Leaf Object Top" style="height:300px;-webkit-filter: drop-shadow(5px 5px 5px #222 );
@@ -1163,8 +1192,8 @@
 				
 				
 								</div> -->
-				
-				
+
+
 							</section>
 
 
