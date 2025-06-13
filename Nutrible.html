@@ -479,11 +479,12 @@
                                         <div class="col-lg-8">
                                             <h1>Nutribels Treasures<span>Deliciously Healthy, Crafted with Care</span>
                                             </h1>
-                                            <p class="pdes" style=" margin-bottom: 25px;">Nutribels brings you healthy, delicious
+                                            <p class="pdes" style=" margin-bottom: 25px;">Nutribels brings you healthy,
+                                                delicious
                                                 chikkis made with real peanuts, jaggery, and superfoods. Free from
                                                 preservatives, these snacks are packed with energy and perfect for kids,
                                                 gifting, or a quick boost. Taste tradition with every bite!
-                                             
+
                                             </p>
 
                                         </div>
@@ -495,10 +496,18 @@
                                                 <div class="Nutribleitem prothumb ">
                                                     <img class=" lazyload"
                                                         src="./OurImages/ProductPNG/Peanut Rajgira.png"
-                                                        alt="Methi Matthi"/>
+                                                        alt="Methi Matthi" />
                                                 </div>
-                                                <h2>peanuts Rajgira Chikki</h2>
+                                                <h2>Peanut Crush Chikki</h2>
                                             </a>
+                                            <button class="view-details-btn" data-name="Peanut Crush Chikki"
+                                                data-weight="32g" data-price="₹10"
+                                                data-description="Experience the perfect blend of natural fruit flavors with our premium Fruit Freeze treats. Made from carefully selected fresh fruits and frozen to perfection, each bite delivers an explosion of authentic taste."
+                                                data-shop-url="https://your-shop.com/fruit-freeze"
+                                                onclick="openProductPopup(this)">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                Shop Now
+                                            </button>
                                         </div>
 
                                         <div class=" col-12 col-md-6 col-lg-4 productItem wow fadeInDown">
@@ -509,6 +518,14 @@
                                                         alt="Chakli" />
                                                 </div>
                                                 <h2>Rajgira Chikki</h2>
+                                                <button class="view-details-btn" data-name="Rajgira Chikki"
+                                                    data-weight="20g" data-price="₹10"
+                                                    data-description="Experience the perfect blend of natural fruit flavors with our premium Fruit Freeze treats. Made from carefully selected fresh fruits and frozen to perfection, each bite delivers an explosion of authentic taste."
+                                                    data-shop-url="https://your-shop.com/fruit-freeze"
+                                                    onclick="openProductPopup(this)">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    Shop Now
+                                                </button>
                                             </a>
                                         </div>
 
@@ -520,18 +537,35 @@
                                                         src="./OurImages/ProductPNG/Peanut Crush Chikki.png"
                                                         alt="Methi Matthi" />
                                                 </div>
-                                                <h2>Peanut Crush Chikki</h2>
+                                                <h2>Peanut Rajgira
+                                                    Chikki </h2>
+                                                <button class="view-details-btn" data-name="Peanut Rajgira Chikki"
+                                                data-weight="32g" data-price="₹10"
+                                                data-description="Experience the perfect blend of natural fruit flavors with our premium Fruit Freeze treats. Made from carefully selected fresh fruits and frozen to perfection, each bite delivers an explosion of authentic taste."
+                                                data-shop-url="https://your-shop.com/fruit-freeze"
+                                                onclick="openProductPopup(this)">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                Shop Now
+                                            </button>
                                             </a>
                                         </div>
 
                                         <div class=" col-12 col-md-6 col-lg-4 productItem wow fadeInDown">
-                                            <a id="1167" data-post="products_cpt" href="#"
+                                            <a 
                                                 class="productitem ProductToggle">
                                                 <div class="Nutribleitem  prothumb  ">
                                                     <img class="lazyload" src="./OurImages/ProductPNG/Peanut Chikki.png"
                                                         alt="Chakli" />
                                                 </div>
                                                 <h2>Peanut Chikki</h2>
+                                                <button class="view-details-btn" data-name="Peanut Chikki"
+                                                data-weight="32g" data-price="₹10"
+                                                data-description="Experience the perfect blend of natural fruit flavors with our premium Fruit Freeze treats. Made from carefully selected fresh fruits and frozen to perfection, each bite delivers an explosion of authentic taste."
+                                                data-shop-url="https://your-shop.com/fruit-freeze"
+                                                onclick="openProductPopup(this)">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                Shop Now
+                                            </button>
                                             </a>
                                         </div>
 
@@ -1052,6 +1086,82 @@
     <script nomodule>
         loadIOPolyfillIfNeeded().then(lazyLoadWhenVisible);
     </script>
+
+
+    <!-- -------------------------------------------products  pop up body ------------------------------------------- -->
+
+    <!-- Single Reusable Popup -->
+
+    <!-- Demo Button -->
+    <button class="demo-btn" onclick="openPopup()" style="display: none;">
+        <i class="fas fa-eye"></i> View Product Details
+    </button>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
+        <div class="popup-container" onclick="event.stopPropagation()">
+            <!-- Popup Header -->
+            <div class="popup-header">
+                <button class="close-btn" onclick="closePopup()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <h3 id="popupTitle">Premium Coffee Blend</h3>
+            </div>
+
+            <!-- Popup Body -->
+            <div class="popup-body">
+                <!-- Product Details -->
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">
+                            <i class="fas fa-weight-hanging"></i> Weight
+                        </div>
+                        <div class="detail-value" id="popupWeight">250g</div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-label">
+                            <i class="fas fa-tag"></i> Price
+                        </div>
+                        <div class="detail-value price-value" id="popupPrice">₹299</div>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="description">
+                    <h4>
+                        <i class="fas fa-info-circle"></i>
+                        Product Description
+                    </h4>
+                    <p id="popupDescription">Experience the perfect blend of premium coffee beans sourced from the
+                        finest plantations. Our signature roast delivers a rich, aromatic flavor that awakens your
+                        senses and energizes your day. Perfect for coffee enthusiasts who appreciate quality and taste.
+                    </p>
+                </div>
+
+                <!-- Shop Now Button -->
+                <button class="shop-now-btn" id="shopNowBtn" onclick="goToShop()">
+                    <i class="fas fa-shopping-cart"></i>
+                    Shop Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------products  pop up body End ------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
